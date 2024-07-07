@@ -1,6 +1,5 @@
 package xqwtxon.NPCParticlesNK.CreadoresProgram;
 import cn.nukkit.plugin.PluginBase;
-import xqwtxon.NPCParticlesNK.CreadoresProgram.ParticleEffect;
 import java.io.File;
 public class Main extends PluginBase{
   @Override
