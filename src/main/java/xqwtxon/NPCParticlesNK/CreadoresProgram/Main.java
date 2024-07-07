@@ -16,9 +16,6 @@ public class Main extends PluginBase{
   }
   @Override
   public void onEnable(){
-    int colorA = this.getConfig().getInt("Color A");
-    int colorB = this.getConfig().getInt("Color B");
-    int colorC = this.getConfig().getInt("Color C");
     this.saveDefaultConfig();
     this.getServer().getScheduler().scheduleRepeatingTask(new ParticleEffect(this), 2);
   }
