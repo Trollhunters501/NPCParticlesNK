@@ -31,11 +31,11 @@ public class ParticleEffect extends Task{
           double y = entity.getPosition().getY();
           double z = entity.getPosition().getZ();
           Level worlds = entity.getLevel();
-          int hypo = 0.8;
+          double hypo = 0.8;
           double a = (double) Math.cos(Math.toRadians(this.r / 0.09)) * hypo;
           double b = (double) Math.sin(Math.toRadians(this.r / 0.09)) * hypo;
-          int time = (int) (System.currentTimeMillis() - Nukkit.START_TIME);
-          int seconds = Math.floor(time % 20);
+          double time = (System.currentTimeMillis() - Nukkit.START_TIME);
+          double seconds = Math.floor(time % 20);
           double up = (double) seconds / 5;
           Vector3 pos1 = new Vector3(x - a, y + up, z - b);
           Vector3 pos2 = new Vector3(x - b, y + up, z - a);
