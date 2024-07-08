@@ -20,7 +20,9 @@ jobs:
         restore-keys: |
           ${{ runner.os }}-maven-
     - name: Build with Maven
-      run: mvn clean package
+      run: |
+        mvn install:install-file -Dfile={}
+        mvn clean package
 
     - name: Copy artifacts
       run: |
