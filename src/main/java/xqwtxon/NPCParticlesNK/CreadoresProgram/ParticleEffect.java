@@ -7,6 +7,7 @@ import cn.nukkit.level.Level;
 import cn.nukkit.entity.Entity;
 import cn.nukkit.Nukkit;
 import idk.plugin.npc.entities.NPC_Human;
+import java.util.Map;
 public class ParticleEffect extends Task{
   private int r = 0;
   private Main plugin;
@@ -19,7 +20,8 @@ public class ParticleEffect extends Task{
       this.r++;
       return;
     }
-    for(Level world : this.plugin.getServer().getLevels()){
+    for(Integer subworld : this.plugin.getServer().getLevels().keySet()){
+      Level world = this.plugin.getServer().getLevels().get(subworld);
       int colorA = this.plugin.getConfig().getInt("Color A");
       int colorB = this.plugin.getConfig().getInt("Color B");
       int colorC = this.plugin.getConfig().getInt("Color C");
