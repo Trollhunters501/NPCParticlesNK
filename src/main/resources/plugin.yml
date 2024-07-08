@@ -2,9 +2,9 @@ name: NPCParticles
 version: "2.0.2"
 api: "1.0.0"
 main: xqwtxon.NPCParticlesNK.CreadoresProgram.Main
-authors: "xqwtxon Terpz710 Creadores Program"
+author: xqwtxon Terpz710 Creadores Program
 load: POSTWORLD
-description: "NPC have now particles"
+description: NPC have now particles
 softdepend:
   - NPC
 loadbefore:
